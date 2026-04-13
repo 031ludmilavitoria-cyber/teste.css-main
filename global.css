@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing:border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d63384;
+    color: black;
+}
+
+.caixa{
+    background-color:#ffb6c1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgha (0, 0, 0, 0.2);
+
+}
+
+.Grupo-input{
+    margin-bottom:15px;
+}
+.Grupo-input label{
+    display:block;
+    margin: bottom 5px;;
+}
+.Grupo-input input{
+    width: 100%;
+    border:1%;
+    outline:none;
+    transition: 0.2s;
+
+}
+.Grupo-input :focus{
+    border-color: blueviolet
+    
+}
+input-erro{
+    border-color: blue;
+}
