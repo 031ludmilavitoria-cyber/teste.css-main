@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Bio Planner</title>
+    <link rel="stylesheet" href="Login.css">
 </head>
-        <h1>Login</h1>
+
 <body>
-     <form>
-                <div calss="grupo-input">
-                    <label for="email">Email</label>
-                    <input type="email" id="email"placeholder="Digite seu email" required>
-            </form>
-        </div>
-        <div calss="grupo-input">
-                    <label for="senha">Senha</label>
-                    <input type="senha" id="senha" placeholder="Digite sua senha" required>
-        </div>
-        <div>
-        <button type="submit" class="Cadastrar" style="width: 10%;">
-                            Cadastrar
-                    </button>
-        </div>
-        <a href="" target="_blank">Recupera senha</a>
-        </div>
+
+<div class="login-container">
+
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <form>
+
+                <label class="lbl email">Email</label>
+                <div class="input-group">
+                        <input type="email" placeholder="Digite seu email" required>
+                </div>
+
+            
+                <label class="lbl pass">Senha</label>
+                <div class="input-group">
+                        <input type="password" placeholder="Digite sua senha" required>
+                </div>
+
+                <a href="#" class="create">Recuperar senha</a>
+
+                <div class="buttons">
+                        <button type="submit" class="btn-primary">Entrar</button>
+                        <button type="reset" class="btn-secondary">Limpar</button>
+                </div>
+
+        </form>
+    </div>
+
+</div>
+
 </body>
 </html>
