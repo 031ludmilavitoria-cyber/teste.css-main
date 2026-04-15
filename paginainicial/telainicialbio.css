@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(135deg,#f7f2f5,#f3e3ec);
+  font-family: Arial;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.sub {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: linear-gradient(90deg,#ff6aa2,#ff4f8b);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}

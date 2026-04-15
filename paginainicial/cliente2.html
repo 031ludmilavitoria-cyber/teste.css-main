@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Pacientes</title>
-  <link rel="stylesheet" href="styles2.css">
+<meta charset="UTF-8">
+<title>Pacientes</title>
+<link rel="stylesheet" href="cliente2.css">
 </head>
 <body>
 
@@ -12,15 +12,13 @@
   <div class="logo">Bio Planner</div>
 
   <div class="nav-links">
-    <a href="#">Dashboard</a>
+    <a>Dashboard</a>
     <a class="active">Pacientes</a>
     <a>Exames</a>
     <a>Resultados</a>
     <a>Relatórios</a>
     <a>Configurações</a>
   </div>
-
-  <div class="user">Dra. Juliana Martins</div>
 </div>
 
 <div class="container">
@@ -39,34 +37,46 @@
     </div>
 
     <div class="card">
-      <h3>Filtros rápidos</h3>
+      <h4>Filtros rápidos</h4>
       <ul>
-        <li>Peelings químicos <span>64</span></li>
-        <li>Limpeza de pele <span>58</span></li>
+        <li>Peelings <span>64</span></li>
+        <li>Limpeza <span>58</span></li>
         <li>Bioestimuladores <span>42</span></li>
-        <li>Preenchimento <span>36</span></li>
       </ul>
+    </div>
 
-      <div class="card">
-      <h3>Agendamentos</h3>
-      <p>Março 2026</p>
-      <br>
-      <p style="color:#aaa;font-size:13px;">[<div class="calendar">aqui tem calendario</p>
-    <!-- MAIN -->
+    <div class="card calendar">
+  
+      <div class="calendar-header">
+        <button id="prev">◀</button>
+        <h4 id="mesAno"></h4>
+        <button id="next">▶</button>
+      </div>
+
+      <div class="calendar-grid header-days">
+        <div>D</div><div>S</div><div>T</div><div>Q</div><div>Q</div><div>S</div><div>S</div>
+      </div>
+
+      <div class="calendar-grid" id="dias"></div>
+
+    </div>
+
+  </div>
+
+  <!-- MAIN -->
   <div class="main">
 
     <div class="header">
       <h1>Pacientes</h1>
-      <p>Gerencie e acompanhe os pacientes</p>
+      <p>Gerencie e acompanhe o histórico dos pacientes</p>
     </div>
 
     <div class="topbar">
-
       <div class="search">
-        <input type="text" placeholder="Pesquisar...">
-        <select><option>Status: Todos</option></select>
+        <input placeholder="Pesquisar...">
+        <select><option>Status</option></select>
         <select><option>Tratamentos</option></select>
-        <select><option>Ordenar: Nome</option></select>
+        <select><option>Ordenar</option></select>
       </div>
 
       <div class="actions">
@@ -74,7 +84,6 @@
         <button class="btn btn-outline">Exportar</button>
         <button class="btn btn-primary">+ Novo Paciente</button>
       </div>
-
     </div>
 
     <!-- TABLE -->
@@ -90,7 +99,6 @@
       </thead>
 
       <tbody>
-
         <tr>
           <td>
             <div class="patient">
@@ -98,12 +106,9 @@
               Julia Marinho
             </div>
           </td>
-          <td>(11) 98888-1234</td>
+          <td>(31) 98888-1234</td>
           <td>12/03/2025</td>
-          <td>
-            <span class="tag">Peeling</span>
-            <span class="tag">Limpeza</span>
-          </td>
+          <td><span class="tag">Peeling</span><span class="tag">Limpeza</span></td>
           <td><span class="badge green">Ativo</span></td>
         </tr>
 
@@ -114,11 +119,9 @@
               Beatriz Lobo
             </div>
           </td>
-          <td>(11) 97777-5678</td>
+          <td>(23) 97777-5678</td>
           <td>08/03/2025</td>
-          <td>
-            <span class="tag">Bioestimulador</span>
-          </td>
+          <td><span class="tag">Bioestimulador</span></td>
           <td><span class="badge blue">Em tratamento</span></td>
         </tr>
 
@@ -129,29 +132,11 @@
               Maria Clara
             </div>
           </td>
-          <td>(11) 96666-4321</td>
+          <td>(31) 96666-4321</td>
           <td>05/03/2025</td>
-          <td>
-            <span class="tag">Limpeza</span>
-          </td>
+          <td><span class="tag">Limpeza</span></td>
           <td><span class="badge orange">Aguardando retorno</span></td>
         </tr>
-
-        <tr>
-          <td>
-            <div class="patient">
-              <div class="avatar"></div>
-              Melissa Isabela
-            </div>
-          </td>
-          <td>(11) 93333-2109</td>
-          <td>20/02/2025</td>
-          <td>
-            <span class="tag">Drenagem</span>
-          </td>
-          <td><span class="badge gray">Inativo</span></td>
-        </tr>
-
       </tbody>
     </table>
 
@@ -159,12 +144,13 @@
       <button>1</button>
       <button class="active">2</button>
       <button>3</button>
-      <button>4</button>
     </div>
 
-  </div>   
+  </div>
 
-  </div> 
+</div>
+
+<script src="calenario.js"></script>
 
 </body>
 </html>
