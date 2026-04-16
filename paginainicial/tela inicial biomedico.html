@@ -2,35 +2,90 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Biomédico</title>
 <link rel="stylesheet" href="telainicialbio.css">
 </head>
+
 <body>
 
-<div class="container">
+<div class="dashboard">
 
-  <h1>Bem-vinda, Dra. Juliana</h1>
-  <p class="sub">Resumo da sua clínica</p>
+<header class="topbar">
+    <div class="logo">
+        <div class="logo-icon">+</div>
+        <div>
+            <h2>Bio Planner</h2>
+            <span>BIOMEDICINA ESTÉTICA</span>
+        </div>
+    </div>
 
-  <button class="btn">+ Novo Agendamento</button>
+    <nav>
+        <a class="active">Dashboard</a>
+        <a>Pacientes</a>
+        <a>Exames</a>
+        <a>Resultados</a>
+        <a>Relatórios</a>
+        <a>Configurações</a>
+    </nav>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stat"><h2>12</h2><p>Consultas</p></div>
-    <div class="stat"><h2>3</h2><p>Pacientes</p></div>
-    <div class="stat"><h2>28</h2><p>Tratamentos</p></div>
-    <div class="stat"><h2>85%</h2><p>Retorno</p></div>
-  </div>
+    <div class="user">
+        <img src="https://i.pravatar.cc/40?img=47">
+        <div>
+            <strong>Dra. Juliana Martins</strong>
+            <small>Biomédica Esteta</small>
+        </div>
+    </div>
+</header>
 
-  <!-- AGENDA -->
-  <div class="card">
-    <h3>Agenda do dia</h3>
-    <ul>
-      <li>09:00 - Julia Marinho</li>
-      <li>10:30 - Beatriz Lobo</li>
-      <li>14:00 - Maria Clara</li>
-    </ul>
-  </div>
+<main class="content">
+
+<div class="title-row">
+    <div>
+        <h3>Bem-vinda, Dra. Juliana! 👋</h3>
+        <p>Aqui está o resumo da sua clínica hoje.</p>
+    </div>
+    <button>+ Novo Agendamento</button>
+</div>
+
+<div class="grid five">
+    <div class="card"><strong>12</strong><span>Consultas hoje</span></div>
+    <div class="card"><strong>3</strong><span>Novos pacientes</span></div>
+    <div class="card"><strong>28</strong><span>Em tratamento</span></div>
+    <div class="card"><strong>85%</strong><span>Taxa de retorno</span></div>
+    <div class="card"><strong>R$ 24.560</strong><span>Faturamento</span></div>
+</div>
+
+<div class="grid two">
+    <div class="card large">
+        <h4>Agenda do dia</h4>
+        <p>09:00 • Julia Marinho</p>
+        <p>10:30 • Beatriz Lobo</p>
+        <p>14:00 • Maria Clara</p>
+        <p>17:00 • Lucas Vieira</p>
+    </div>
+
+    <div class="card large">
+        <h4>Distribuição de procedimentos</h4>
+        <div class="circle"></div>
+    </div>
+</div>
+
+<div class="grid three">
+    <div class="card large"><h4>Atividades recentes</h4></div>
+    <div class="card large"><h4>Pacientes em destaque</h4></div>
+    <div class="card large"><h4>Alertas e lembretes</h4></div>
+</div>
+
+<div class="footer-box">
+    <div>
+        <strong>Seu crescimento, nossa missão</strong>
+        <p>Acompanhe métricas e insights.</p>
+    </div>
+    <button>Ver Relatórios</button>
+</div>
+
+</main>
 
 </div>
 

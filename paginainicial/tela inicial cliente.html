@@ -2,48 +2,91 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Cliente</title>
 <link rel="stylesheet" href="telainicialcliente.css">
 </head>
+
 <body>
 
-<div class="container">
+<div class="dashboard">
 
-  <h1>Olá, Juliana!</h1>
-  <p class="sub">Sua jornada de cuidado começa aqui.</p>
-
-  <button class="btn">+ Agendar consulta</button>
-
-  <!-- CARDS -->
-  <div class="cards">
-    <div class="card">
-      <h3>Próximo agendamento</h3>
-      <p><strong>15/05 - 14:00</strong></p>
+<header class="topbar">
+    <div class="logo">
+        <div class="logo-icon">+</div>
+        <div>
+            <h2>Bio Planner</h2>
+            <span>BIOMEDICINA ESTÉTICA</span>
+        </div>
     </div>
 
-    <div class="card">
-      <h3>Seus protocolos</h3>
-      <p>2 ativos</p>
+    <nav>
+        <a class="active">Início</a>
+        <a>Agendamentos</a>
+        <a>Procedimentos</a>
+        <a>Resultados</a>
+        <a>Minha Conta</a>
+    </nav>
+
+    <div class="user">
+        <img src="https://i.pravatar.cc/40?img=32">
+        <div>
+            <strong>Olá, Juliana!</strong>
+            <small>Cliente</small>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+
+<div class="title-row">
+    <div>
+        <h3>Olá, Juliana!</h3>
+        <p>Que bom te ver por aqui. Sua jornada de cuidado começa aqui.</p>
+    </div>
+    <button>+ Agendar consulta</button>
+</div>
+
+<div class="grid four">
+    <div class="card"><h4>📅 Próximo agendamento</h4><strong>15/05 • 14:00</strong><span>Limpeza de pele</span></div>
+    <div class="card"><h4>⭐ Seus protocolos</h4><strong>2 ativos</strong><span>Bioestimuladores</span></div>
+    <div class="card"><h4>📈 Resultados</h4><strong>Evolução registrada</strong><span>Acompanhe sua transformação</span></div>
+    <div class="card"><h4>💗 Fidelidade</h4><strong>320 pontos</strong><span>Troque por benefícios</span></div>
+</div>
+
+<h5>Destaques para você</h5>
+
+<div class="grid three">
+    <div class="banner">Cuidados com a pele</div>
+    <div class="banner">Bioestimuladores</div>
+    <div class="banner">Rotina de skincare</div>
+</div>
+
+<div class="grid two">
+    <div class="card large">
+        <h4>Seus próximos agendamentos</h4>
+        <p>Limpeza de pele profunda • 15/05/2025 • 14:00</p>
     </div>
 
-    <div class="card">
-      <h3>Resultados</h3>
-      <p>Evolução registrada</p>
+    <div class="card large">
+        <h4>Lembretes</h4>
+        <ul>
+            <li>Preparação para consulta</li>
+            <li>Renovação de protocolo</li>
+            <li>Avaliação de resultados</li>
+        </ul>
     </div>
+</div>
 
-    <div class="card">
-      <h3>Pontos</h3>
-      <p>320 pontos</p>
+<div class="footer-box">
+    <div>
+        <strong>Dúvidas? Fale com nossa equipe</strong>
+        <p>Estamos aqui para te ajudar em cada etapa.</p>
     </div>
-  </div>
+    <button>WhatsApp</button>
+</div>
 
-  <!-- DESTAQUES -->
-  <h2>Destaques</h2>
-  <div class="highlights">
-    <div class="highlight"></div>
-    <div class="highlight"></div>
-    <div class="highlight"></div>
-  </div>
+</main>
 
 </div>
 
